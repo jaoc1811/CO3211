@@ -1,6 +1,7 @@
 function x = triangularsup(A,b)
 n=size(A)(1);
 
+x=zeros(n,1);
 x(n) = b(n)/A(n,n);
 
 for i=n-1:-1:1
