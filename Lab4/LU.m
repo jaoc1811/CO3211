@@ -1,4 +1,4 @@
-function x = LU(A,b)
+function [L,U,x] = LU(A,b)
 
 n=size(A)(1);
 
