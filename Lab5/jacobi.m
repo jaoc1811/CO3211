@@ -1,4 +1,4 @@
-function [xnuevo,k] = jacobi(A,b,xviejo,maxIteraciones,tolerancia)
+function xnuevo = jacobi(A,b,xviejo,maxIteraciones,tolerancia)
     n = size(A,1);
     xnuevo = NaN*ones(n,1);
     for k=1:maxIteraciones
