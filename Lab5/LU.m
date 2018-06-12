@@ -1,7 +1,7 @@
 function x = LU(A,b)
 
 n=size(A)(1);
-x = zeros(n,3)
+x = zeros(n,3);
 
 for k=2:n
     for i=k:n

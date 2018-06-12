@@ -44,19 +44,22 @@ disp('Para x0= [0,...,0]')
 
 disp('x1')
 time = cputime;
-x(1:n,1) = gaussseidel(A,B(1:n,1),zeros(n,1),1500,1*10^-5);
+[x(1:n,1),iteraciones] = gaussseidel(A,B(1:n,1),zeros(n,1),1500,1*10^-5);
+iteraciones
 disp('Tiempo tomado')
 tiempo = cputime - time
 
 disp('x2')
 time = cputime;
-x(1:n,2) = gaussseidel(A,B(1:n,2),zeros(n,1),1500,1*10^-5);
+[x(1:n,2),iteraciones] = gaussseidel(A,B(1:n,2),zeros(n,1),1500,1*10^-5);
+iteraciones
 disp('Tiempo tomado')
 tiempo = cputime - time
 
 disp('x3')
 time = cputime;
-x(1:n,3) = gaussseidel(A,B(1:n,3),zeros(n,1),1500,1*10^-5);
+[x(1:n,3),iteraciones] = gaussseidel(A,B(1:n,3),zeros(n,1),1500,1*10^-5);
+iteraciones
 disp('Tiempo tomado')
 tiempo = cputime - time
 
@@ -66,19 +69,22 @@ disp('Para x1 = [1,...,1]')
 
 disp('x1')
 time = cputime;
-x(1:n,1) = gaussseidel(A,B(1:n,1),ones(n,1),1500,1*10^-5);
+[x(1:n,1),iteraciones] = gaussseidel(A,B(1:n,1),ones(n,1),1500,1*10^-5);
+iteraciones
 disp('Tiempo tomado')
 tiempo = cputime - time
 
 disp('x2')
 time = cputime;
-x(1:n,2) = gaussseidel(A,B(1:n,2),ones(n,1),1500,1*10^-5);
+[x(1:n,2),iteraciones] = gaussseidel(A,B(1:n,2),ones(n,1),1500,1*10^-5);
+iteraciones
 disp('Tiempo tomado')
 tiempo = cputime - time
 
 disp('x3')
 time = cputime;
-x(1:n,3) = gaussseidel(A,B(1:n,3),ones(n,1),1500,1*10^-5);
+[x(1:n,3),iteraciones] = gaussseidel(A,B(1:n,3),ones(n,1),1500,1*10^-5);
+iteraciones
 disp('Tiempo tomado')
 tiempo = cputime - time
 
