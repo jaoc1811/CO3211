@@ -117,6 +117,12 @@ autovalorMaximo = r
 iteraciones = k
 autovalorMinimo = r
 
+% Para la matriz A, al buscar tanto el maximo como el minimo el metedo converge a la solucion.
+% Pero en caso de la matriz B, solo converge de manera acertada para el caso del maximo.
+% Esto se debe a que no existe un autovalor minimo, pues los otros dos autovalores que quedan tienen igual modulo.
+
+
+
 
 
 
